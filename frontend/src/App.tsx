@@ -1,9 +1,7 @@
-import ReactDOM from "react-dom/client";
 
 import "./index.css";
 import InvestorsPage from "./components/Investors.Page";
-import { Router, Routes, Route, BrowserRouter } from "react-router-dom";
-import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import InvestorCommitmentsPage from "./components/InvestorCommitments.Page";
 
 const App = () => (

@@ -5,7 +5,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     ports:
-      - '9000:8000'
+      - '8000:8000'
 
   frontend:
     build:
@@ -13,7 +13,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - '5500:80'
-    environment:
-      - REACT_APP_API_URL=http://localhost:9000
+    env_file:
+      - .env
     depends_on:
       - backend
