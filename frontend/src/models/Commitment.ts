@@ -1,4 +1,4 @@
-interface Commitment {
+export interface Commitment {
     id: number;
     asset_class: string;
     currency: string;

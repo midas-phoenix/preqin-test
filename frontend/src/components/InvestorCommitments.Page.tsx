@@ -1,8 +1,5 @@
-// src/components/InvestorCommitments.tsx
-
 import React, { useState, useEffect, useMemo } from 'react';
 import { FaArrowLeft } from "react-icons/fa";
-import axios, { AxiosResponse } from 'axios';
 import {
     useReactTable,
     getCoreRowModel,
@@ -18,6 +15,7 @@ import {
 import { Link, useParams } from 'react-router-dom';
 import { formatNumber } from '../utils/utility';
 import { InvestorAPI } from '../api/InvestorApi';
+import { Commitment } from '../models/Commitment';
 
 
 const InvestorCommitmentsPage: React.FC = () => {

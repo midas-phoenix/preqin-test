@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import axios, { AxiosResponse } from 'axios';
 import {
   useReactTable,
   getCoreRowModel,
@@ -9,6 +8,7 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { formatNumber } from '../utils/utility';
 import { InvestorAPI } from '../api/InvestorApi';
+import { Investor } from '../models/Investor';
 
 
 
